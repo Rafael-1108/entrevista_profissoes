@@ -1,12 +1,7 @@
-/* ========================================================= */
-/* 1. RESET BÁSICO E VARIÁVEIS (Para consistência)          */
-/* ========================================================= */
-
 :root {
-    /* Cores sugeridas baseadas no tema Sorvete/Skimell */
-    --cor-principal: #bd895f; /* Rosa/Pink (como um sorvete de morango) */
-    --cor-secundaria: #ff5c5c; /* Azul (para destaque ou fundo) */
-    --cor-fundo-claro: #FFF5EE; /* Branco Sujo / Creme */
+    --cor-principal: #bd895f;
+    --cor-secundaria: #ff5c5c;
+    --cor-fundo-claro: #FFF5EE;
     --cor-texto-escuro: #333;
     --cor-texto-claro: #FFF;
     --fonte-principal: 'Helvetica Neue', Arial, sans-serif;
@@ -160,9 +155,6 @@ blockquote {
     border-radius: 5px;
 }
 
-
-/* --- PÁGINA CONTATO/ENTREVISTA --- */
-
 .perguntas-respostas dt {
     font-weight: bold;
     color: var(--cor-secundaria);
@@ -183,7 +175,6 @@ ol {
     margin-bottom: 20px;
 }
 
-/* Estilo do Formulário */
 #contato-form form div {
     margin-bottom: 15px;
 }
@@ -216,24 +207,19 @@ ol {
 }
 
 #contato-form button:hover {
-    background-color: #e55bb4; /* Tom mais escuro */
+    background-color: #e55bb4;
 }
-
-
-/* ========================================================= */
-/* 4. GALERIA (FLEXBOX) + EFEITOS DE HOVER                  */
-/* ========================================================= */
 
 .galeria-container {
     display: flex;
-    flex-wrap: wrap; /* Permite que os itens quebrem a linha */
-    gap: 20px; /* Espaçamento entre os itens */
-    justify-content: center; /* Centraliza os itens na tela */
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
     margin-top: 20px;
 }
 
 .galeria-item {
-    width: 300px; /* Largura base para telas maiores */
+    width: 300px;
     overflow: hidden;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -244,7 +230,7 @@ ol {
 
 .galeria-item img {
     width: 100%;
-    height: 200px; /* Altura fixa para manter o grid uniforme */
+    height: 200px;
     object-fit: cover;
     display: block;
 }
@@ -258,20 +244,13 @@ ol {
     margin-bottom: 0;
 }
 
-/* Efeito de hover simples para destaque das imagens */
 .galeria-item:hover {
-    transform: translateY(-5px); /* Efeito sutil de levantar */
+    transform: translateY(-5px);
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
-
-/* ========================================================= */
-/* 5. DESIGN RESPONSIVO BÁSICO (Media Queries) 📱            */
-/* ========================================================= */
-
 @media (max-width: 768px) {
-    
-    /* Ajustes Gerais */
+
     main {
         width: 95%;
         padding: 15px;
@@ -282,9 +261,8 @@ ol {
         font-size: 1.5em;
     }
 
-    /* Menu de Navegação */
     nav ul {
-        flex-direction: column; /* Links empilhados em telas menores */
+        flex-direction: column;
         padding: 5px 0;
     }
 
@@ -293,20 +271,18 @@ ol {
         font-size: 0.9em;
     }
 
-    /* Galeria (Ajuste para uma coluna em telas muito pequenas) */
     .galeria-item {
-        width: 100%; /* Ocupa a largura total do container */
-        max-width: 400px; /* Limita o tamanho em dispositivos maiores */
+        width: 100%;
+        max-width: 400px;
     }
 
-    /* Rodapé */
     footer {
         font-size: 0.8em;
     }
 }
 
 @media (min-width: 769px) {
-    /* Mostra a imagem do banner em telas maiores */
+
     .banner img {
         display: block; 
         width: 100%;
@@ -315,11 +291,10 @@ ol {
         position: absolute;
         top: 0;
         left: 0;
-        z-index: -1; /* Fica atrás dos títulos */
-        opacity: 0.3; /* Deixa a imagem mais clara para o texto ser legível */
+        z-index: -1;
+        opacity: 0.3;
     }
 
-    /* Ajusta a posição do banner e títulos em telas maiores */
     .banner {
         position: relative;
         padding-top: 10px;
